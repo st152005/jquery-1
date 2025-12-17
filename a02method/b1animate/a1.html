@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $("#btnProceed").click(function(){
+            $('#dvi1').animate({
+                'left':'300px',
+                'top':'100px'
+            },1000)
+        });
+    
+   $('#btnReverse').click(function(){
+    $('#dvi1').animate({
+        'left':'0',
+        'top':'0'
+    },1000);
+})
+   });
+</script>
+<div id="dvi1" style="position: relative; left: 0; top: 0;">Tuesday</div>
+<input type="button" id="btnProceed" value="Proceed"/>
+<input type="button" id="btnReverse" value="Reverse"/>

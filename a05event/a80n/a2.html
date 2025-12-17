@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    function show(e){
+        alert(e.data.x + e.data.y);
+    }
+    $(function(){
+        $(document).on("click",{x:2.5, y:9}, show);
+        $(document).on("click",{x:5, y:4.5}, show);
+    });
+</script>

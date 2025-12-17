@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $('#btnFadeOut').click(function(){
+            $('#dvi1').fadeOut();
+            $('#dvi2').fadeOut('slow');
+            $('#dvi3').fadeOut('5000');
+        })
+    });
+</script>
+
+<div id="dvi1">Sunday</div>
+<div id="dvi2">Monday</div>
+<div id="dvi3">Tuesday</div>
+
+<input type="button" id="btnFadeOut" value="Fade Out"/>

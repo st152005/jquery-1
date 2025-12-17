@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    function showDateTime(){
+        pid.innerText=Date();
+    }
+    $(function(){
+        $('#rdoAdd').click(function(){
+            $('#btndt').bind("click", showDateTime);
+        }),
+        $('#rdoRemove').click(function(){
+            $('#btndt').unbind("click");
+        })
+    });
+</script>
+
+<p id="pid">Wait</p>
+<input type="button" value="DateTime" id="btndt"/>
+<input type="radio" id="rdoAdd" name="ar"/>Add
+<input type="radio"  id="rdoRemove" name="ar"/>Remove

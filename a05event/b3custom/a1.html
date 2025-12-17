@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $(document).on('usrEvent', function(e, p1, p2){
+            alert(p1 + "\n" + p2);
+        })
+        $(document).trigger('usrEvent', [5, 9]);
+    })
+</script>

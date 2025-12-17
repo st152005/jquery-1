@@ -1,0 +1,11 @@
+drink categories are
+hot, cool and soft
+
+hot drink categories are
+coffee, tea and milk
+
+cool drink categories are
+7up, pepsi, coke
+
+soft drink categories are
+orange, apple and mango juices

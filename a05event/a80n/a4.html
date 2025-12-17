@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $("div").on({
+            mouseenter: function(){
+                $(this).css('background-color', 'red');
+            },
+            mousemove: function(){
+               $(this).css('background-color', 'green');
+            },
+            click: function(){
+              //$(this).css('background-color', 'blue');
+            },
+            dbclick: function(){
+                $(this).css('background-color', 'yellow');
+            },
+            mouseleave: function(){
+                $(this).css('background-color', '');
+            }
+
+        })
+    });
+</script>
+
+<div style="width:250px; height: 250px; border-style: solid;"></div>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $(document).keydown(function(){
+            $('#ta1').append(Date() + ",key down\n");
+        });
+         $(document).keyup(function(){
+            $('#ta1').append(Date() + ",key up\n");
+        });
+         $(document).keypress
+         (function(){
+            $('#ta1').append(Date() + ",key press\n");
+        });
+    });
+</script>
+<textarea rows="20" cols="100" id="ta1"></textarea>

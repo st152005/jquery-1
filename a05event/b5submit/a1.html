@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<form>
+    Username:<input type="text" id="tbx"><br><br>
+    Password:<input type="password" id="pwd"><br><br>
+    <input type="submit" value="SignIn"/>
+    <span id="spn"></span>
+</form>
+<script>
+    $('form').submit(function(){
+        if(!isVaildForm()){
+            event.preventDefault();
+        }
+    });
+    function isVaildForm(){
+        var $uname=$('#tbx').val();
+        var $pwd=$('#pwd').val();
+        if($uname.trim().length == 0){
+            $('#spn').text("Username is required...!");
+            $('#spn').css("color", "red");
+            return false;
+        }
+        else if($pwd.trim().length == 0){
+            $('#spn').text("Password is required...!");
+            $('#spn').css("color", "red");
+            return false;
+        
+        }
+        else{
+            $('#spn').text("Form Submitted...!");
+            $('#spn').css("color", "green");
+            return false;
+        }
+    }
+</script>

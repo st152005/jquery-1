@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(document).ready(function(){
+       $('#btnAdd').click(function(){
+        $('#dvi1').addClass('ucls', 900, callBackFn());
+    });
+    function callBackFn(){
+        setTimeout(function(){
+            $('#dvi1').removeClass('ucls');
+        },1000);
+    }
+});
+</script>
+<div id="dvi1">Wednesday</div>
+<input type="button" id="btnAdd" value="Add"/>

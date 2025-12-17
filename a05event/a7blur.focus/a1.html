@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $('input').blur(function(){
+            $(this).css('background-color',``);
+        });
+        $('input').focus(function(){
+            $(this).css('background-color','red');
+        });
+        
+    })
+</script>
+<input type="text"/><br><br>
+<input type="text"/>

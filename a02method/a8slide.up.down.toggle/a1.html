@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $('#btnSlideUp').click(function(){
+           $('#di1').slideUp('slow');
+        });
+        $('#btnSlideDown').click(function(){
+           $('#di1').slideDown();
+        });
+         $('#btnSlideToggle').click(function(){
+           $('#di1').slideToggle('fast');
+        });
+    });
+</script>
+
+<div id="di1" style="color: red;" >Sunday</div><br>
+
+<input type="button" id="btnSlideUp" value="Slide Up" style="color: blue;"/><br><br>
+<input type="button" id="btnSlideDown" value="Slide Down" style="color: blue;"/><br><br>
+<input type="button" id="btnSlideToggle" value="Slide Toggle" style="color: blue;"/><br><br>

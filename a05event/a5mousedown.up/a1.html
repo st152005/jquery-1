@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $(document).mousedown(function(){
+            $('#ta1').append(Date() +",mouse down\n");
+        });
+    $(document).mouseup(function(){
+        $('#ta1').append(Date() +",mouse up\n");
+    });
+});
+</script>
+
+<textarea rows="20" cols="100" id="ta1"></textarea>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $(document).on('usrEvent', function(e, p1, p2){
+            alert(p1 + "\n" + p2);
+        })
+    });
+</script>
+<input type="text" id="tbx1" value="88"/>
+<input type="text" id="tbx2" value="99"/>
+<br>
+<br>
+<input type="button" value="Click" onclick="$(document).trigger('usrEvent', [tbx1.value, tbx2.value]);"/>

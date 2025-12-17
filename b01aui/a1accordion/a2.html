@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<style>
+    h3{
+        cursor: pointer;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color:black;
+    }
+</style>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $("#dv1").accordion();
+    });
+    function chkbx_oninput(arg){
+        document.title=arg;
+        if(arg==true){
+            $(function(){
+                $("#dv1").accordion("option", "disabled", true);
+            });
+        }else {
+             $(function(){
+                $("#dv1").accordion("option", "disabled", false);
+            });
+    }}
+</script>
+<input type="checkbox" id="chkbx" oninput="chkbx_oninput(this.checked);"/>Disable / Enable
+<div id="dvi1">
+    <h3>Hot Drinks</h3>
+    <div>
+        <p>Coffee</p>
+        <p>Tea</p>
+        <p>Milk</p>
+    </div>
+    <h3>Cool Drinks</h3>
+    <div>
+        <p>7Up</p>
+        <p>Pepsi</p>
+        <p>Coke</p>
+    </div>
+    <h3>Soft Drinks</h3>
+    <div>
+        <p>Orange Juice</p>
+        <p>Grapes Juice</p>
+        <p>Mango Jucie</p>
+    </div>
+</div>

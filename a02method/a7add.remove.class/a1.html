@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<style>
+    .uc1 {
+     color: red;
+     font-weight: bold;
+     font-style: italic;
+    }
+</style>
+
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $('#btnAdd').click(function(){
+           $('#dvi1').addClass('uc1');
+        });
+        $('#btnRemove').click(function(){
+            $('#dvi1').removeClass('uc1');
+        })
+    });
+</script>
+
+
+
+
+<div id="dvi1">Sunday</div> <br>
+<input type="button" id="btnAdd" value="Add"/><br><br>
+<input type="button" id="btnRemove" value="Remove"/>
+

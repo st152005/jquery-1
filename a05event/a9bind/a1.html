@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $('#rdored').bind("click",function(){
+            $(document.body).css('background-color','red');
+        });
+        $('#rdogreen').bind("click",function(){
+            $(document.body).css('background-color','green');
+        });
+        $('#rdoblue').bind("click",function(){
+            $(document.body).css('background-color','blue');
+        });
+        $('#rdonone').bind("click",function(){
+            $(document.body).css('background-color','');
+        })
+
+    });
+</script>
+<input type="radio" id="rdored" name="rgb">Red
+<input type="radio" id="rdogreen" name="rgb">Green
+<input type="radio" id="rdoblue" name="rgb">Blue
+<input type="radio" id="rdonone" name="rgb">None

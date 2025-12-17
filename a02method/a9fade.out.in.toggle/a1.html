@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+         $('#btnFadeOut').click(function(){
+           $('#dvi1').fadeOut('slow');
+        });
+        $('#btnFadeIn').click(function(){
+           $('#dvi1').fadeIn('slow');
+        });
+         $('#btnFadeToggle').click(function(){
+           $('#dvi1').fadeToggle('');
+        });
+    });
+</script>
+
+
+
+
+<div id="dvi1" style="color: blue;">Monday</div><br>
+<input type="button" id="btnFadeOut" value="Fade Out" style="color: red;"/><br><br>
+<input type="button" id="btnFadeIn" value="Fade In" style="color: red;"/><br><br>
+<input type="button" id="btnFadeToggle" value="Fade Toggle" style="color: red;"/><br><br>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<script src="../../ulib/min.js"></script>
+<script>
+    $(function(){
+        $('#tbx1').keyup(function(){
+            $('#tbx2').val($('#tbx1').val());
+        })
+    });
+</script>
+
+<input type="text" id="tbx1"/><br><br>
+<input type="text" id="tbx2"/>
